@@ -1,0 +1,311 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos de header*/
+.banner{
+    overflow: hidden;
+}
+
+/*estilos de menu*/
+header nav{
+    display: none;
+}
+
+.dropdown{
+    background-color: #212529;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dropdown-menu{
+    background-color: #343A40;
+    text-shadow: 1px 1px 3px black;
+}
+
+/*estilos de main home*/
+main h2{
+    text-align: center;
+    text-shadow: 1px 1px 2px #495057 ;
+}
+main p{
+    text-align: center;
+}
+.contenedor-main{
+    background-image: linear-gradient(to bottom, #CED4DA,#495057) ;
+}
+.contenedor-video{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 50px;
+   
+}
+.texto-video{
+    padding: 30px;
+    color: black;
+}
+
+#podcast-img{
+    width: 30%;
+}
+
+.boton-arriba{
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    text-decoration: none;  
+    font-size: 1.1rem;
+    padding: 5px;
+    box-shadow: 1px 1px 4px black;
+    background-color: #343A40;
+    border-color: #343A40;
+    color:#CED4DA;
+    border-radius: 5px;
+}
+.boton-arriba:hover{
+    color:#CED4DA;
+    transform: scale(0.9);
+}
+
+/*estilos de main personajes*/
+
+.main-personajes{
+    display: grid;
+    grid-template-columns:auto ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "ms ds"
+    "img-ms img-ds"
+    "text-ms text-ds"
+    "km kk"
+    "img-km img-kk"
+    "text-km text-kk"
+    "rh cb"
+    "img-rh img-cb"
+    "text-rh text-cb";
+    justify-content: center;
+    align-items: center;
+}
+.ms{
+    grid-area: 1;
+}
+.ds{
+    grid-area: 2;
+}
+.img-ms{
+    grid-area: 3;
+}
+.img-ds{
+    grid-area: 4;
+}
+.text-ms{
+    grid-area: 5;
+}
+.text-ds{
+    grid-area: 6;
+}
+.km{
+    grid-area: 7;
+}
+.kk{
+    grid-area: 8;
+}
+.img-km{
+    grid-area: 9;
+}
+.img-kk{
+    grid-area: 10;
+}
+.text-km{
+    grid-area: 11;
+}
+.text-kk{
+    grid-area: 12;
+}
+.rh{
+    grid-area: 13;
+}
+.cb{
+    grid-area: 14;
+}
+.img-rh{
+    grid-area: 15;
+}
+.img-cb{
+    grid-area: 16;
+}
+.text-rh{
+    grid-area: 17;
+}
+.text-cb{
+    grid-area: 18;
+}
+
+.contenedor{
+    padding: 30px;
+    
+}
+.personaje-img{
+    border-radius: 200px;
+    box-shadow: 2px 2px 5px #212529;
+}
+
+h4{
+    text-shadow: 1px 1px 2px #212529;
+    color: black;
+
+}
+
+/*estilos de main fun facts*/
+#main-funfacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#carouselExampleCaptions{
+    width: 60%;
+    
+}
+
+/*estilos de main memes*/
+
+.contenedor-memes{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-auto-columns: minmax(1400px, auto);
+    grid-template-areas:
+     "meme-1 meme-2" 
+     "meme-3 meme-4"
+      "meme-5 meme-6" 
+      /* parte del diseño que suprimi hasta conseguir adaptar la estructura a distintos tamaños de imagenes
+      "meme-7 meme-8" 
+      "meme-9 meme-10";
+      */
+}
+.lazyone{
+    grid-area: meme-1;
+}
+.jimo{
+    grid-area: meme-2;
+}
+.self-liar{
+    grid-area: meme-3;
+}
+.self-liar2{
+    grid-area: meme-4;
+}
+.self-love{
+    grid-area: meme-5;
+}
+.self-love2{
+    grid-area: meme-6;
+}
+.knows{
+    grid-area: meme-5;
+}
+/*
+.memardo{
+    grid-area: meme-8;
+}
+.staney-meme{
+    grid-area: meme-9;
+}
+.michel-sucker{
+    grid-area: meme-10;
+}
+*/
+/*estilos de main comunidad*/
+#main-comunidad{
+    padding: 100px;
+    display: grid;
+
+}
+#boton{
+    padding: 5px;
+    box-shadow: 1px 1px 4px black;
+    background-color: #343A40;
+    border-color: #343A40;
+    color:#CED4DA;
+    border-radius: 5px;
+}
+#boton:hover{
+    transform: scale(0.9);
+}
+.form{
+    padding: 10px;
+}
+.input{
+    border-radius: 5px;
+    width: 250px;
+    display: block;
+}
+.comentario{
+    border-radius: 5px;
+    width: 250px;
+    height: 75px;
+    display: block;
+
+}
+/*estilos de footer*/
+footer{
+    background-color: #343A40;
+}
+footer h3{
+    text-align: center;
+    color:#E9ECEF;
+    text-shadow: 1px 1px 2px black;
+    padding: 20px;
+    font-size: 16px;
+
+}
+
+/* media query escritorio*/
+@media screen and (min-width:1024px){
+/*estilos de menú*/
+header nav {
+    display: block;
+    background-color: #212529;
+    height: 80px;
+    padding: 30px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+header nav ul li a{
+    color: #E9ECEF;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.3rem;
+
+}
+header nav ul li a{
+    transition: 1s;
+}
+header nav ul li a:hover{
+    transform: scale(0.9);
+    color: #E9ECEF;
+    background-color: #343A40;
+    padding: 5px;
+    border-width: 20px;
+    transition: 1s;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 5px;
+
+}
+.dropdown{
+    display: none;
+}
+}

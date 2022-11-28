@@ -74,22 +74,22 @@ main p{
 
 /*estilos de main personajes*/
 
-.main-personajes{
+#main-personajes{
     display: grid;
-    grid-template-columns:auto ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;}
+   /*
     grid-template-areas:
-    "ms ds"
-    "img-ms img-ds"
-    "text-ms text-ds"
-    "km kk"
-    "img-km img-kk"
-    "text-km text-kk"
-    "rh cb"
-    "img-rh img-cb"
-    "text-rh text-cb";
-    justify-content: center;
-    align-items: center;
+    "ms ds km"
+    "img-ms img-ds img-km"
+    "text-ms text-ds text-km"
+    "kk rh cb"
+    "img-kk img-rh img-cb"
+    "text-kk text-rh text-cb"
+    ;
+    
 }
 .ms{
     grid-area: 1;
@@ -97,46 +97,46 @@ main p{
 .ds{
     grid-area: 2;
 }
-.img-ms{
+.km{
     grid-area: 3;
 }
-.img-ds{
+.img-ms{
     grid-area: 4;
 }
-.text-ms{
+.img-ds{
     grid-area: 5;
 }
-.text-ds{
+.img-km{
     grid-area: 6;
 }
-.km{
+.text-ms{
     grid-area: 7;
 }
-.kk{
+.text-ds{
     grid-area: 8;
 }
-.img-km{
+.text-km{
     grid-area: 9;
 }
-.img-kk{
+.kk{
     grid-area: 10;
 }
-.text-km{
+.rh{
     grid-area: 11;
 }
-.text-kk{
+.cb{
     grid-area: 12;
 }
-.rh{
+.img-kk{
     grid-area: 13;
 }
-.cb{
+.img-rh{
     grid-area: 14;
 }
-.img-rh{
+.img-cb{
     grid-area: 15;
 }
-.img-cb{
+.text-kk{
     grid-area: 16;
 }
 .text-rh{
@@ -145,6 +145,7 @@ main p{
 .text-cb{
     grid-area: 18;
 }
+*/
 
 .contenedor{
     padding: 30px;
@@ -308,4 +309,18 @@ header nav ul li a:hover{
 .dropdown{
     display: none;
 }
+/*estilos de main personajes*/
+#main-personajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
 }
+}
+
+    
+
+    
+
+    

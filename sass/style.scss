@@ -1,0 +1,92 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//hojas secundarias
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/media-queries";
+@import "utilidades/personajes";
+@import "utilidades/fun-facts";
+@import "utilidades/memes-falopa";
+@import "utilidades/comunidad";
+
+
+/*ëstilos generales*/
+
+header{
+    .banner {
+    overflow: hidden;
+    }
+    nav{
+      display: none;
+    }
+    .dropdown{
+        background-color: $color4;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        .dropdown-menu{
+            background-color: $color3;
+            text-shadow: 1px 1px 3px black;
+        }
+    }
+  }
+
+ main {
+    h2{
+    text-align: center;
+    text-shadow: 1px 1px 2px $color2 ;
+    }
+    p{
+        text-align: center;
+    }
+    .contenedor-main{
+        background-image: linear-gradient(to bottom, $color1,$color2) ;
+    }
+    div{
+        .boton-arriba{
+            @include botones;
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            
+        }
+    }
+}
+
+footer{
+    background-color: $color4;
+     h3{
+    text-align: center;
+    color:$color1;
+    text-shadow: 1px 1px 2px black;
+    padding: 20px;
+    font-size: 16px;
+    }
+}
+
+/*estilos de home*/
+
+main{
+    .contenedor-main{
+        .contenedor-video{
+            @include flex-columna;
+            padding-top: 50px;
+        
+        }
+        .texto-video{
+            padding: 30px;
+            color: black;
+        }
+        
+        #podcast-img{
+            width: 30%;
+        }
+        
+    }
+}

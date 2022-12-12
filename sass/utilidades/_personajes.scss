@@ -1,0 +1,12 @@
+#main.personajes{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    .contenedor{
+        .personaje-img{
+            border-radius: 200px;
+            box-shadow: 2px 2px 5px black;
+        }
+    }
+
+}

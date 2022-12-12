@@ -1,0 +1,21 @@
+#main-comunidad{
+    padding: 100px;
+    display: grid;
+    .form{
+    padding: 10px;
+     #boton{
+      @include botones
+    }
+     .input{
+     border-radius: 5px;
+     width: 250px;
+     display: block;
+    }
+    .comentario{
+     border-radius: 5px;
+     width: 250px;
+     height: 75px;
+     display: block;
+     }
+ }
+}

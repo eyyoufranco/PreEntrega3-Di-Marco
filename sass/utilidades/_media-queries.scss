@@ -1,4 +1,5 @@
 //hojas secundarias
+
 @import "utilidades/variables";
 @import "utilidades/mixin";
 @import "utilidades/extend";
@@ -8,7 +9,7 @@
 @import "utilidades/comunidad";
 
 @media screen and (min-width:1024px){
-    /estilos de menú/
+    /*estilos de menú*/
     header {
         nav {
             display: block;

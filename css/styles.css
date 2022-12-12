@@ -1,7 +1,142 @@
+@charset "UTF-8";
 /* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-@impor;
+@media screen and (min-width: 1024px) {
+  /*estilos de menú*/
+  header nav {
+    display: block;
+    background-color: #212529;
+    height: 80px;
+    padding: 30px; }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; }
+      header nav ul li a {
+        color: #E9ECEF;
+        text-decoration: none;
+        text-shadow: 1px 1px 3px black;
+        font-size: 1.3rem;
+        transition: 1s; }
+        header nav ul li a:hover {
+          padding: 5px;
+          box-shadow: 1px 1px 4px black;
+          background-color: #343A40;
+          border-color: #343A40;
+          color: #CED4DA;
+          border-radius: 5px; }
+          header nav ul li a:hover:hover {
+            transform: scale(0.9); }
+  header .dropdown {
+    display: none; } }
+
+#main.personajes {
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  #main.personajes .contenedor .personaje-img {
+    border-radius: 200px;
+    box-shadow: 2px 2px 5px black; }
+
+main #main-funfacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+#main-comunidad {
+  padding: 100px;
+  display: grid; }
+  #main-comunidad .form {
+    padding: 10px; }
+    #main-comunidad .form #boton {
+      padding: 5px;
+      box-shadow: 1px 1px 4px black;
+      background-color: #343A40;
+      border-color: #343A40;
+      color: #CED4DA;
+      border-radius: 5px; }
+      #main-comunidad .form #boton:hover {
+        transform: scale(0.9); }
+    #main-comunidad .form .input {
+      border-radius: 5px;
+      width: 250px;
+      display: block; }
+    #main-comunidad .form .comentario {
+      border-radius: 5px;
+      width: 250px;
+      height: 75px;
+      display: block; }
+
+/*ëstilos generales*/
+header .banner {
+  overflow: hidden; }
+
+header nav {
+  display: none; }
+
+header .dropdown {
+  background-color: #212529;
+  padding: 30px;
+  display: flex;
+  justify-content: center; }
+  header .dropdown .dropdown-menu {
+    background-color: #343A40;
+    text-shadow: 1px 1px 3px black; }
+
+main h2 {
+  text-align: center;
+  text-shadow: 1px 1px 2px #495057; }
+
+main p {
+  text-align: center; }
+
+main .contenedor-main {
+  background-image: linear-gradient(to bottom, #CED4DA, #495057); }
+
+main div .boton-arriba {
+  padding: 5px;
+  box-shadow: 1px 1px 4px black;
+  background-color: #343A40;
+  border-color: #343A40;
+  color: #CED4DA;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  text-decoration: none;
+  font-size: 1.1rem; }
+  main div .boton-arriba:hover {
+    transform: scale(0.9); }
+
+footer {
+  background-color: #212529; }
+  footer h3 {
+    text-align: center;
+    color: #CED4DA;
+    text-shadow: 1px 1px 2px black;
+    padding: 20px;
+    font-size: 16px; }
+
+/*estilos de home*/
+main .contenedor-main .contenedor-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px; }
+
+main .contenedor-main .texto-video {
+  padding: 30px;
+  color: black; }
+
+main .contenedor-main #podcast-img {
+  width: 30%; }

@@ -5,16 +5,16 @@
     box-sizing: border-box;
 }
 //hojas secundarias
+
 @import "utilidades/variables";
 @import "utilidades/mixin";
-@import "utilidades/media-queries";
 @import "utilidades/personajes";
 @import "utilidades/fun-facts";
 @import "utilidades/memes-falopa";
 @import "utilidades/comunidad";
 
 
-/*ëstilos generales*/
+/ëstilos generales/
 
 header{
     .banner {
@@ -22,15 +22,49 @@ header{
     }
     nav{
       display: none;
+      @include desktop{
+        display: block;
+            background-color: #212529;
+            height: 80px;
+            padding: 30px;
+      }
+      ul{
+        @include desktop{
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+        align-items: center;}
+            li{
+                a{
+                 @include desktop{
+                color: #E9ECEF;
+                text-decoration: none;
+                text-shadow: 1px 1px 3px black;
+                font-size: 1.3rem;
+                transition: 1s;
+                &:hover{
+                    @include botones
+                }
+                }
+                }
+            }
     }
+}
     .dropdown{
         background-color: $color4;
         padding: 30px;
         display: flex;
         justify-content: center;
+        @include desktop{
+            display: none;
+        }
         .dropdown-menu{
             background-color: $color3;
             text-shadow: 1px 1px 3px black;
+            @include desktop{
+                display: none;
+            }
         }
     }
   }
@@ -77,13 +111,12 @@ main{
         .contenedor-video{
             @include flex-columna;
             padding-top: 50px;
-        
+                       
         }
         .texto-video{
             padding: 30px;
             color: black;
-        }
-        
+        }        
         #podcast-img{
             width: 30%;
         }

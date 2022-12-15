@@ -1,12 +1,25 @@
-#main.personajes{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    .contenedor{
-        .personaje-img{
-            border-radius: 200px;
-            box-shadow: 2px 2px 5px black;
-        }
-    }
 
-}
+/*estilos de personajes*/
+    #main-personajes{
+        @include flex-columna;
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        @include desktop{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor{
+            img{
+                border-radius: 200px;
+                box-shadow: 2px 2px 5px black;
+                align-self: center;
+            }
+        }
+
+    }

@@ -1,48 +1,31 @@
-@charset "UTF-8";
 /* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-@media screen and (min-width: 1024px) {
-  /*estilos de menú*/
-  header nav {
-    display: block;
-    background-color: #212529;
-    height: 80px;
-    padding: 30px; }
-    header nav ul {
-      list-style: none;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center; }
-      header nav ul li a {
-        color: #E9ECEF;
-        text-decoration: none;
-        text-shadow: 1px 1px 3px black;
-        font-size: 1.3rem;
-        transition: 1s; }
-        header nav ul li a:hover {
-          padding: 5px;
-          box-shadow: 1px 1px 4px black;
-          background-color: #343A40;
-          border-color: #343A40;
-          color: #CED4DA;
-          border-radius: 5px; }
-          header nav ul li a:hover:hover {
-            transform: scale(0.9); }
-  header .dropdown {
-    display: none; } }
-
-#main.personajes {
-  display: grid;
-  justify-content: center;
-  align-items: center; }
-  #main.personajes .contenedor .personaje-img {
+/*estilos de personajes*/
+#main-personajes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (min-width: 780px) {
+    #main-personajes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto; } }
+  @media screen and (min-width: 1024px) {
+    #main-personajes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      justify-content: center;
+      align-items: center; } }
+  #main-personajes .contenedor img {
     border-radius: 200px;
-    box-shadow: 2px 2px 5px black; }
+    box-shadow: 2px 2px 5px black;
+    align-self: center; }
 
 main #main-funfacts {
   display: flex;
@@ -51,6 +34,31 @@ main #main-funfacts {
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px; }
+
+/*estilos de memes*/
+main .contenedor-main .contenedor-memes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 780px) {
+    main .contenedor-main .contenedor-memes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+  @media screen and (min-width: 1024px) {
+    main .contenedor-main .contenedor-memes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+
+main .contenedor-main .meme {
+  padding: 15px; }
 
 #main-comunidad {
   padding: 100px;
@@ -76,21 +84,56 @@ main #main-funfacts {
       height: 75px;
       display: block; }
 
-/*ëstilos generales*/
+/*estilos generales*/
 header .banner {
   overflow: hidden; }
 
 header nav {
   display: none; }
+  @media screen and (min-width: 1024px) {
+    header nav {
+      display: block;
+      background-color: #212529;
+      height: 80px;
+      padding: 30px; } }
+  @media screen and (min-width: 1024px) {
+    header nav ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; } }
+  @media screen and (min-width: 1024px) {
+    header nav ul li a {
+      color: #E9ECEF;
+      text-decoration: none;
+      text-shadow: 1px 1px 3px black;
+      font-size: 1.3rem;
+      transition: 1s; }
+      header nav ul li a:hover {
+        padding: 5px;
+        box-shadow: 1px 1px 4px black;
+        background-color: #343A40;
+        border-color: #343A40;
+        color: #CED4DA;
+        border-radius: 5px; }
+        header nav ul li a:hover:hover {
+          transform: scale(0.9); } }
 
 header .dropdown {
   background-color: #212529;
   padding: 30px;
   display: flex;
   justify-content: center; }
+  @media screen and (min-width: 1024px) {
+    header .dropdown {
+      display: none; } }
   header .dropdown .dropdown-menu {
     background-color: #343A40;
     text-shadow: 1px 1px 3px black; }
+    @media screen and (min-width: 1024px) {
+      header .dropdown .dropdown-menu {
+        display: none; } }
 
 main h2 {
   text-align: center;
